@@ -7,7 +7,7 @@ local Window = Fluent:CreateWindow({
     SubTitle = "Wibu là chính",
     TabWidth = 160,
     Size = UDim2.fromOffset(530, 350),
-    Acrylic = true,
+    Acrylic = false,
     Theme = "Rose",
     MinimizeKey = Enum.KeyCode.End
 })
@@ -15,7 +15,7 @@ local Tabs = {
     Main = Window:AddTab({ Title = "Tab Farm", Icon = "home" }),
     Setting = Window:AddTab({ Title = "Tab Setting", Icon = "settings" }),
     Stats = Window:AddTab({ Title = "Tab Stats", Icon = "plus-circle" }),
-    Player = Window:AddTab({ Title = "Tab Player", Icon = "Robot" }),
+    Player = Window:AddTab({ Title = "Tab Player", Icon = "Baby" }),
     Teleport = Window:AddTab({ Title = "Tab Teleport", Icon = "palmtree" }),
     Fruit = Window:AddTab({ Title = "Tab Fruit esp", Icon = "apple" }),
     Raid = Window:AddTab({ Title = "Tab Dungeon", Icon = "sword" }),
@@ -6290,7 +6290,7 @@ end
 local Mastery = Tabs.Raid:AddSection("Law Raid")
 
 
-local ToggleLaw = Tabs.Raid:AddToggle("ToggleLaw", {Title = "Auto buy chip kill Law",Description = "T", Default = false })
+local ToggleLaw = Tabs.Raid:AddToggle("ToggleLaw", {Title = "Auto buy chip kill Law",Description = "1.000F", Default = false })
 
 ToggleLaw:OnChanged(function(Value)
     Auto_Law = Value
@@ -6726,7 +6726,7 @@ Tabs.Shop:AddButton({
 })
 Tabs.Shop:AddButton({
 	Title = "Buy Dragon Claw",
-	Description = "1500F",
+	Description = "1.500F",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","DragonClaw","1")
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","DragonClaw","2")
@@ -6789,7 +6789,7 @@ Tabs.Shop:AddButton({
 })
 Tabs.Shop:AddButton({
 	Title = "Buy Reroll Race",
-	Description = "3000F",
+	Description = "3.000F",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","Reroll","1")
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","Reroll","2")
