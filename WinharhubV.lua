@@ -15,7 +15,7 @@ local Tabs = {
     Main = Window:AddTab({ Title = "Tab Farm", Icon = "home" }),
     Setting = Window:AddTab({ Title = "Tab Setting", Icon = "settings" }),
     Stats = Window:AddTab({ Title = "Tab Stats", Icon = "plus-circle" }),
-    Player = Window:AddTab({ Title = "Tab Player", Icon = "robot" }),
+    Player = Window:AddTab({ Title = "Tab Player", Icon = "Robot" }),
     Teleport = Window:AddTab({ Title = "Tab Teleport", Icon = "palmtree" }),
     Fruit = Window:AddTab({ Title = "Tab Fruit esp", Icon = "apple" }),
     Raid = Window:AddTab({ Title = "Tab Dungeon", Icon = "sword" }),
