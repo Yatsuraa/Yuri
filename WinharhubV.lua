@@ -1,7 +1,6 @@
 local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/Yatsuraa/UiWinhar/main/Winhar_main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/Yatsuraa/UiWinhar/main/WinharManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/Yatsuraa/UiWinhar/main/WinharfaceManager.lua"))()
-local InterfaceManagerr = loadstring(game:HttpGet("https://raw.githubusercontent.com/Yatsuraa/UiWinhar/main/Winherr.lua"))()
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local Window = Fluent:CreateWindow({
     Title = "Winhar hub",
