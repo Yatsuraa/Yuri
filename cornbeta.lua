@@ -13,7 +13,7 @@ getgenv().config = getgenv().config or {
     keybind = Enum.KeyCode.V
 }
  
-loadstring(game:HttpGet(('https://scriptblox.com/raw/Blade-Ball-Opensource-autoparry-8123'),true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()
 print(value)
 end)
 
