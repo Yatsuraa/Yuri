@@ -13,12 +13,12 @@ getgenv().config = getgenv().config or {
     keybind = Enum.KeyCode.V
 }
  
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()
+loadstring(game:HttpGet(('https://scriptblox.com/raw/Blade-Ball-Opensource-autoparry-8123'),true))()
 print(value)
 end)
 
 Section:CreateToggle("Auto Parry Beta2 🌽", function(value)
-loadstring(game:HttpGet(('https://scriptblox.com/raw/Blade-Ball-Opensource-autoparry-8123'),true))()
+loadstring(game:HttpGet(('https://pastebin.com/raw/t2391h1A'),true))()
 print(value)
 end)
 
@@ -46,7 +46,7 @@ local function toggle()
 end
 
 local function showNotification()
-    game.StarterGui:SetCore("SendNotification", {Title = "Manual Spam", Text = "Made By SumitScripts", Duration = 5})
+    game.StarterGui:SetCore("SendNotification", {Title = "Manual Spam", Text = "By Gaubaptuoi", Duration = 5})
 end
 
 button.MouseButton1Click:Connect(function()
@@ -81,6 +81,6 @@ _G.Settings = {
     ["Low Rendering"] = true, -- Lower Rendering
     ["Low Quality Parts"] = true -- Lower quality parts
 }
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Yatsuraa/UiWinhar/main/Cornbooster.lua"))()
 print("Clicked")
 end)
