@@ -5889,7 +5889,7 @@ spawn(function()
     end)
 end)
 
-local ToggleCollect = Tabs.Fruit:AddToggle("ToggleCollect", {Title = "Auto Collect Devil Fruit",Description = "", Default = false })
+local ToggleCollect = Tabs.Fruit:AddToggle("ToggleCollect", {Title = "Auto Move Devil Fruit",Description = "", Default = false })
 ToggleCollect:OnChanged(function(Value)
     _G.Tweenfruit = Value
 end)
@@ -6269,7 +6269,7 @@ end)
 
 if Second_Sea then
 Tabs.Raid:AddButton({
-    Title = "Raid Lab",
+    Title = "Move Raid Lab",
     Description = "",
     Callback = function()
         Tween2(CFrame.new(-6438.73535, 250.645355, -4501.50684))
@@ -6277,7 +6277,7 @@ Tabs.Raid:AddButton({
 })
 elseif Third_Sea then
     Tabs.Raid:AddButton({
-        Title = "Raid Lab",
+        Title = "Move Raid Lab",
         Description = "",
         Callback = function()
             Tween2(CFrame.new(-5017.40869, 314.844055, -2823.0127, -0.925743818, 4.48217499e-08, -0.378151238, 4.55503146e-09, 1, 1.07377559e-07, 0.378151238, 9.7681621e-08, -0.925743818))
@@ -6402,14 +6402,14 @@ Tabs.Race:AddButton({
 })
 
 
-local ToggleHumanandghoul = Tabs.Race:AddToggle("ToggleHumanandghoul", {Title = "Auto [ Human / Ghoul ] Trial",Description = "", Default = false })
+local ToggleHumanandghoul = Tabs.Race:AddToggle("ToggleHumanandghoul", {Title = "Auto Trailer Human Ghoul",Description = "", Default = false })
 ToggleHumanandghoul:OnChanged(function(Value)
     KillAura = Value
 end)
 Options.ToggleHumanandghoul:SetValue(false)
 
 
-local ToggleAutotrial = Tabs.Race:AddToggle("ToggleAutotrial", {Title = "Auto Trial",Description = "", Default = false })
+local ToggleAutotrial = Tabs.Race:AddToggle("ToggleAutotrial", {Title = "Auto Trailer All Race",Description = "", Default = false })
 ToggleAutotrial:OnChanged(function(Value)
     _G.AutoQuestRace = Value
 end)
@@ -6947,11 +6947,11 @@ Tabs.Misc:AddButton({
 })
 
 
-local Mastery = Tabs.Misc:AddSection("Troll")
+local Mastery = Tabs.Misc:AddSection("Troll player")
 
 
 Tabs.Misc:AddButton({
-	Title = "Rain Fruit",
+	Title = "Auto Rain Fruit",
 	Description = "",
 	Callback = function()
         for i, v in pairs(game:GetObjects("rbxassetid://14759368201")[1]:GetChildren()) do
@@ -6998,7 +6998,7 @@ spawn(function()
     local Mastery = Tabs.Misc:AddSection("Kaitun Cap")
 
 Tabs.Misc:AddButton({
-	Title = "Show Items",
+	Title = "Auto Show Items",
 	Description = "",
 	Callback = function()
 		do
@@ -7330,7 +7330,7 @@ SaveManager:SetFolder("Winharhub/specific-game")
 Window:SelectTab(1)
 Fluent:Notify({
     Title = "Winterhub",
-    Content = "Cảm ơn bạn đã sử dụng hack .",
+    Content = "Cảm ơn bạn đã sử dụng hack",
     Duration = 8
 })
 SaveManager:LoadAutoloadConfig()
