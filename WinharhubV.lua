@@ -3,7 +3,7 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/Y
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/Yatsuraa/UiWinhar/main/WinharfaceManager.lua"))()
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local Window = Fluent:CreateWindow({
-    Title = "Winhar hub",
+    Title = "Winter hub",
     SubTitle = "Wibu là chính",
     TabWidth = 160,
     Size = UDim2.fromOffset(530, 350),
@@ -2496,7 +2496,7 @@ ImageButton.BorderSizePixel = 0
 ImageButton.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
 ImageButton.Size = UDim2.new(0, 50, 0, 50)
 ImageButton.Draggable = true
-ImageButton.Image = "http://www.roblox.com/asset/?id=16722014827"
+ImageButton.Image = "http://www.roblox.com/asset/?id=16761484432"
 ImageButton.MouseButton1Down:connect(function()
     game:GetService("VirtualInputManager"):SendKeyEvent(true,Enum.KeyCode.End,false,game)
 end)
@@ -2513,7 +2513,7 @@ end
 --------------------------------------------------------------------------------------------------------------------------------------------
 --Create Tabs
 local Farming = Tabs.Main:AddSection("Farming")
-local listfastattack = {'Normal Attack','Fast Attack','Super Fast Attack'}
+local listfastattack = {'Normal ','slow ','Super '}
 
     local DropdownDelayAttack = Tabs.Main:AddDropdown("DropdownDelayAttack", {
         Title = "Select Fast Attack",
@@ -2525,11 +2525,11 @@ local listfastattack = {'Normal Attack','Fast Attack','Super Fast Attack'}
     DropdownDelayAttack:SetValue("Fast Attack")
     DropdownDelayAttack:OnChanged(function(Value)
     _G.FastAttackWinhar_Mode = Value
-	if _G.FastAttackWinhar_Mode == "Fast Attack" then
+	if _G.FastAttackWinhar_Mode == "Slow" then
 		_G.Fast_Delay = 0.07
-	elseif _G.FastAttackWinhar_Mode == "Normal Attack" then
+	elseif _G.FastAttackWinhar_Mode == "Normal" then
 		_G.Fast_Delay = 0.04
-	elseif _G.FastAttackWinhar_Mode == "Super Fast Attack" then
+	elseif _G.FastAttackWinhar_Mode == "Super" then
 		_G.Fast_Delay = 0.01
 	end
 end)
@@ -7329,7 +7329,7 @@ InterfaceManager:SetFolder("Winharhub")
 SaveManager:SetFolder("Winharhub/specific-game")
 Window:SelectTab(1)
 Fluent:Notify({
-    Title = "Winhar hub",
+    Title = "Winterhub",
     Content = "Cảm ơn bạn đã sử dụng hack .",
     Duration = 8
 })
