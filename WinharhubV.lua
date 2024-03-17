@@ -3321,8 +3321,8 @@ spawn(function()
 
     local ToggleSpawnCake = Tabs.Main:AddToggle("ToggleSpawnCake", {
         Title = "off turn on Cake Prince Spawn",
-        Description = "", 
-        Default = false })
+        Description = " tắt là sẽ không spam katakuri v1", 
+        Default = true })
     ToggleSpawnCake:OnChanged(function(Value)
       _G.SpawnCakePrince = Value
     end)
